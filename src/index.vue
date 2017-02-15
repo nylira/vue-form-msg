@@ -10,10 +10,10 @@ export default {
   computed: {
     cssClass () {
       let value = 'ni-form-msg'
-      if (this.body) {
-        value += ' ni-form-msg-desc'
-      } else {
+      if (this.type) {
         value += ' ni-form-msg-error'
+      } else {
+        value += ' ni-form-msg-desc'
       }
       return value
     },
