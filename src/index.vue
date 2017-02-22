@@ -20,10 +20,14 @@ export default {
     error () {
       let msg = ''
       switch (this.type) {
+        case 'alphaNum':
+          msg = 'must contain only alphanumeric characters'; break
         case 'required':
           msg = 'is required'; break
         case 'match':
           msg = 'must be identical'; break
+        case 'exactLength':
+          msg = `must be exactly ${this.length} characters`; break
         case 'minLength':
           msg = `must be longer than ${this.min} characters`; break
         case 'maxLength':
