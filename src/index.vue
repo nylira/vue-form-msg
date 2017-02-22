@@ -42,7 +42,7 @@ export default {
       return msg
     }
   },
-  props: ['type', 'body', 'name', 'min', 'max']
+  props: ['type', 'body', 'name', 'min', 'max', 'length']
 }
 </script>
 
